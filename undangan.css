@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    /* /* height: max-content;
+    width: 1200px; */
+    background: white !important;
+    /* margin: 18px; */
+    margin-top: 40px;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-bottom: 30px;
+    padding: 4px 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(233, 233, 233) !important;
+    /* min-height: 300vh; */
+}
+
+    ::-webkit-scrollbar {
+    width: 0px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: transparent;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: transparent;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+    }
+    .navbar-toggler{
+        font-size: 40px !important;
+    }
+
+nav ul li a{
+    font-size: 40px !important;
+}
+    .nav-undangan p{
+        font-size: 15px;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: 0px solid;
+        padding: 5px 10px;
+    }
+    .nav-undangan p:hover{
+        background: turquoise;
+        color: white;
+    }
+    .card-head{
+        height: 360px;
+        width: 260px;
+        border: 1px solid black;
+    }
+     .left-side{
+            display: flex;
+            flex-wrap: wrap;
+           /* border: 1px solid black; */
+           width: 500px;
+           height: max-content;
+       }
+       .right-side{
+            margin-top: 50px;
+           border: 1px solid black;
+           width: 360px;
+           height: 260px;
+           margin-bottom: 20px;
+       }
+        .right-side-second{
+           border: 1px solid black;
+           width: 360px;
+           height: 260px;
+           /* position: absolute;
+           right: 90px;
+           top: 800px; */
+       }
+
+@media (min-width: 992px) {
+     section{
+    /* /* height: max-content;
+    width: 1200px; */
+    margin: 60px 40px;
+    background: white;
+    height: 300vh;
+    box-sizing: border-box;
+    }
+    nav{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1000000;
+    background: transparent !important;
+}
+     .nav-undangan p{
+        font-size: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        border: 0px solid;
+        padding: 5px 10px;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f100;
+    }
+
+/* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    }
+.sticky{
+    padding: 5px 100px;
+    background: white !important;
+}
+
+nav .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s !important;
+}
+nav ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    position: relative;
+    list-style: none;
+}
+nav ul li a{
+    position: relative !important;
+    margin: 0 15px;
+    color: black !important;
+    letter-spacing: 2px !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    transition: 0.6s !important;
+    }
+    .left-side{
+           /* border: 1px solid black; */
+           width: 880px;
+           height: 400px;
+       }
+       .right-side{
+           border: 1px solid black;
+           width: 300px;
+           height: 400px;
+           margin-top: 0;
+       }
+        .right-side-second{
+           border: 1px solid black;
+           width: 300px;
+           height: 400px;
+           position: absolute;
+           right: 91px;
+           top: 800px;
+       }
+}

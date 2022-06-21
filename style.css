@@ -194,8 +194,16 @@ section{
        }
 
        .kontak :hover{
-           padding: 50px 0px;
+           padding: 20px 0px;
            transition: 1s ease-in-out;
+       }
+       .card-undangan{
+           height: 300px;
+           width: 200px;
+           padding: 10px;
+           border-radius: 10px;
+           background: turquoise;
+           margin: 20px;
        }
 
 @media (min-width: 992px) {
