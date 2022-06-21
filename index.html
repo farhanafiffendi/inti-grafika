@@ -226,6 +226,10 @@
         </div>
     </section>
 
+    <div class="kontak">
+        <i class="fa-brands fa-whatsapp" style="font-size: 60px;"></i>
+    </div>
+
     <footer>
         <div>
             <div class="d-flex justify-content-center">
@@ -243,6 +247,7 @@
     </footer>
 
 
+
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
@@ -257,6 +262,20 @@
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
             },
             autoplay: {
                 delay: 2500,

@@ -11,9 +11,28 @@ body{
     background-color: rgb(233, 233, 233) !important;
     /* min-height: 300vh; */
 }
-.navbar-toggler{
-    font-size: 40px !important;
-}
+
+    ::-webkit-scrollbar {
+    width: 0px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: transparent;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: transparent;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+    }
+    .navbar-toggler{
+        font-size: 40px !important;
+    }
 
 nav ul li a{
     font-size: 40px !important;
@@ -27,26 +46,6 @@ section{
     margin: 18px;
     padding: 4px 0;
 }
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f100;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
 .card-item{
     width: 400px;
     height: 300px;
@@ -91,8 +90,8 @@ section{
         justify-content: space-around !important;
     }
     .card-isi{
-        width: 200px !important;
-        height: 200px !important;
+        width: 350px !important;
+        height: 350px !important;
         padding: 2rem 1rem !important;
         position: relative !important;
         display: flex !important;
@@ -185,7 +184,17 @@ section{
             font-size: 40px;
             color: white;
         }
-       
+       .kontak{
+           position: fixed;
+           z-index: 12000000000;
+           bottom: 50px;
+           right: 30px;
+       }
+
+       .kontak :hover{
+           padding: 50px 0px;
+           transition: 1s ease-in-out;
+       }
 
 @media (min-width: 992px) {
     section{
@@ -207,6 +216,24 @@ section{
     z-index: 1000000;
     background: transparent !important;
 }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f100;
+    }
+
+/* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    }
 .sticky{
     padding: 5px 100px;
     background: white !important;
@@ -342,7 +369,7 @@ nav ul li a{
             background: transparent;
 
             /* Center slide text vertically */
-            display: -webkit-box;
+           display: -webkit-box;
             display: -ms-flexbox;
             display: -webkit-flex;
             display: flex;
@@ -356,12 +383,12 @@ nav ul li a{
             align-items: center;
         }
 
-        /* .swiper-slide img {
+        .swiper-slide img {
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
-        } */
+        }
          .footer{
             width: 100%;
             height: 100px;
