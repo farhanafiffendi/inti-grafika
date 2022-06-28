@@ -25,7 +25,6 @@ $(document).ready(function () {
 			$("#loadMore").text("No Content").addClass("noContent");
 		}
 	});
-
 })
 
 const list_items = [
