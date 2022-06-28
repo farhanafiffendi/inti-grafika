@@ -1,6 +1,6 @@
 window.addEventListener("scroll", function () {
-    var header = document.querySelector('nav');
-    header.classList.toggle("sticky", window.scrollY > 0)
+	var header = document.querySelector('nav');
+	header.classList.toggle("sticky", window.scrollY > 0)
 })
 
 // if (localStorage.getItem('theme') == 'dark')
@@ -15,6 +15,18 @@ window.addEventListener("scroll", function () {
 //         localStorage.removeItem('theme')
 //     }
 // }
+
+$(document).ready(function () {
+	$(".content").slice(0, 6).show();
+	$("#loadMore").on("click", function (e) {
+		e.preventDefault();
+		$(".content:hidden").slice(0, 6).slideDown();
+		if ($(".content:hidden").length == 0) {
+			$("#loadMore").text("No Content").addClass("noContent");
+		}
+	});
+
+})
 
 const list_items = [
 	"Item 1",
@@ -47,7 +59,7 @@ const pagination_element = document.getElementById('pagination');
 let current_page = 1;
 let rows = 5;
 
-function DisplayList (items, wrapper, rows_per_page, page) {
+function DisplayList(items, wrapper, rows_per_page, page) {
 	wrapper.innerHTML = "";
 	page--;
 
@@ -61,12 +73,12 @@ function DisplayList (items, wrapper, rows_per_page, page) {
 		let item_element = document.createElement('div');
 		item_element.classList.add('item');
 		item_element.innerText = item;
-		
+
 		wrapper.appendChild(item_element);
 	}
 }
 
-function SetupPagination (items, wrapper, rows_per_page) {
+function SetupPagination(items, wrapper, rows_per_page) {
 	wrapper.innerHTML = "";
 
 	let page_count = Math.ceil(items.length / rows_per_page);
@@ -76,7 +88,7 @@ function SetupPagination (items, wrapper, rows_per_page) {
 	}
 }
 
-function PaginationButton (page, items) {
+function PaginationButton(page, items) {
 	let button = document.createElement('button');
 	button.innerText = page;
 

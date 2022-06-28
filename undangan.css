@@ -40,9 +40,9 @@ body{
         font-size: 20px !important;
     }
 
-nav ul li a{
-    font-size: 20px !important;
-}
+    nav ul li a{
+        font-size: 20px !important;
+    }
     .nav-undangan p{
         font-size: 15px;
         text-transform: uppercase;
@@ -104,6 +104,43 @@ nav ul li a{
            font-weight: bold;
        }
 
+       #loadMore {
+        width: 200px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        background-color: blue;
+        transition: .3s;
+        text-decoration: none;
+        }
+        #loadMore:hover {
+        color: blue;
+        background-color: #fff;
+        border: 1px solid blue;
+        text-decoration: none;
+        }
+        .noContent {
+        color: #000 !important;
+        background-color: transparent !important;
+        pointer-events: none;
+        }
+        .content {
+        /* height: 100px;
+        width: 45%;
+        color: #fff;
+        font-size: 24px;
+        line-height: 100px;
+        text-align: center;
+        background-color: grey;
+        margin: 5px;
+        border: 1px solid lightgrey; */
+        display: none;
+        }
+
 @media (min-width: 992px) {
     nav{
     position: fixed !important;
@@ -143,40 +180,45 @@ nav ul li a{
     ::-webkit-scrollbar-thumb:hover {
     background: #555;
     }
-.sticky{
-    padding: 5px 100px;
-    background: white !important;
-}
-
-nav .logo{
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s !important;
-}
-nav ul{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-nav ul li{
-    position: relative;
-    list-style: none;
-}
-nav ul li a{
-    position: relative !important;
-    margin: 0 15px;
-    color: black !important;
-    letter-spacing: 2px !important;
-    font-weight: 500 !important;
-    font-size: 20px !important;
-    transition: 0.6s !important;
+    .sticky{
+        padding: 5px 100px;
+        background: rgb(147, 255, 147) !important;
     }
+
+    nav .logo{
+        position: relative;
+        font-weight: 700;
+        color: #fff;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        /* letter-spacing: 2px; */
+        transition: 0.6s !important;
+    }
+    nav ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        position: relative;
+        list-style: none;
+    }
+    nav ul li a{
+        position: relative !important;
+        margin: 0 15px;
+        color: black !important;
+        /* letter-spacing: 2px !important; */
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        transition: 0.6s !important;
+        }
+
+        nav ul li a:hover{
+            color: red !important;
+        }
+
        .nav-text{
            display: flex;
            flex-direction: row;
