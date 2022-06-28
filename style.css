@@ -210,6 +210,10 @@ section{
         justify-content: flex-start;
         margin-left: 20px;
     }
+    .card-center{
+        display: flex;
+        justify-content: center;
+    }
 
 @media (min-width: 992px) {
     section{
@@ -421,5 +425,9 @@ nav ul li a{
         display: flex;
         justify-content: space-evenly;
         margin-left: -20px;
+    }
+    .card-center{
+        display: flex;
+        justify-content: start;
     }
 }
